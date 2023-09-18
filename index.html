@@ -9,21 +9,52 @@
         background-color: rgb(185, 9, 9);
         color: rgba(255, 255, 255, 0.904);
       }
+      button {
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 12px;
+      }
+      button:hover {
+        background-color: #000000;
+        color: white;
+      }
+      .button1 {
+        background-color: rgb(2, 42, 95);
+        color: rgb(255, 0, 200);
+      }
+      .button2 {
+        background-color: rgb(255, 230, 3);
+        color: rgb(22, 0, 145);
+      }
+      .button3 {
+        background-color: rgb(38, 143, 6);
+        color: rgb(0, 0, 0);
+      }
+      .button4 {
+        background-color: rgb(255, 102, 0);
+        color: rgb(94, 9, 68);
+      }
     </style>
   </head>
   <body>
     <header></header>
     <main><h1>Class 1 Lab</h1></main>
-    <p style="color: yellow; background-color: blue">What is your name?</p>
-    <p style="color: rgb(255, 0, 200); background-color: rgb(157, 255, 0)">
-      What is your favourite holiday destination?
-    </p>
-    <p style="color: rgb(80, 253, 45); background-color: rgb(2, 0, 2)">
-      What is your favourite song?
-    </p>
-    <p style="color: rgb(25, 0, 255); background-color: rgb(255, 145, 0)">
-      What is your favourite food?
-    </p>
+
+    <button class="button1" onclick="findname();">
+      Actually my name is...
+    </button>
+    <button class="button2" onclick="place();">
+      My favourite holiday destination is...
+    </button>
+    <button class="button3" onclick="music();">My favourite song is...</button>
+    <button class="button4" onclick="eat();">My favourite food is...</button>
+
     <footer></footer>
     <script>
       let username = prompt("What is your name?");
@@ -63,6 +94,51 @@
           food +
           " all day long."
       );
+      function findname() {
+        let username = prompt("What is your name?");
+        console.log("The users name is " + username);
+
+        alert("Hello " + username + " !");
+      }
+
+      function place() {
+        let holiday = prompt("What is your favourite holiday destination?");
+        console.log("The users favourite holiday destination is " + holiday);
+
+        alert(username + " is a big fan of " + holiday + " you say?");
+      }
+
+      function music() {
+        let song = prompt("What is your favourite song?");
+        console.log("The users favourite song is " + song);
+
+        alert(
+          "let me get this straight, so " +
+            username +
+            " likes " +
+            holiday +
+            " and " +
+            song +
+            "?"
+        );
+      }
+
+      function eat() {
+        let food = prompt("What is your favourite food?");
+        console.log("The users favourite food is " + food);
+
+        alert(
+          "Hello " +
+            username +
+            ", I hope you go on holiday to " +
+            holiday +
+            " where you listen to " +
+            song +
+            " and eat " +
+            food +
+            " all day long."
+        );
+      }
     </script>
   </body>
 </html>
