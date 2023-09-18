@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        background-color: rgb(185, 9, 9);
+        color: rgba(255, 255, 255, 0.904);
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <main><h1>Class 1 Lab</h1></main>
+    <p style="color: yellow; background-color: blue">What is your name?</p>
+    <p style="color: rgb(255, 0, 200); background-color: rgb(157, 255, 0)">
+      What is your favourite holiday destination?
+    </p>
+    <p style="color: rgb(80, 253, 45); background-color: rgb(2, 0, 2)">
+      What is your favourite song?
+    </p>
+    <p style="color: rgb(25, 0, 255); background-color: rgb(255, 145, 0)">
+      What is your favourite food?
+    </p>
+    <footer></footer>
+    <script>
+      let username = prompt("What is your name?");
+      console.log("The users name is " + username);
+
+      alert("Hello " + username + " !");
+
+      let holiday = prompt("What is your favourite holiday destination?");
+      console.log("The users favourite holiday destination is " + holiday);
+
+      alert(username + " is a big fan of " + holiday + " you say?");
+
+      let song = prompt("What is your favourite song?");
+      console.log("The users favourite song is " + song);
+
+      alert(
+        "let me get this straight, so " +
+          username +
+          " likes " +
+          holiday +
+          " and " +
+          song +
+          "?"
+      );
+
+      let food = prompt("What is your favourite food?");
+      console.log("The users favourite food is " + food);
+
+      alert(
+        "Hello " +
+          username +
+          ", I hope you go on holiday to " +
+          holiday +
+          " where you listen to " +
+          song +
+          " and eat " +
+          food +
+          " all day long."
+      );
+    </script>
+  </body>
+</html>
